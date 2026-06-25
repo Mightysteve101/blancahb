@@ -1,0 +1,867 @@
+/****************** Bands page ***************************/
+/*-- -------------------------- -->
+<---          Services          -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #services-2427 {
+    padding: var(--sectionPadding);
+    background-color: #010104;
+    overflow: hidden;
+    position: relative;
+  }
+  #services-2427 .cs-container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(1.8rem, 2rem, 2.5rem);
+  }
+  #services-2427 .cs-title {
+    max-width: 100%;
+    margin: 0;
+    color: var(--bodyTextColorWhite);
+  }
+  #services-2427 .cs-text {
+    color: var(--bodyTextColorWhite);
+    opacity: 0.8;
+  }
+  #services-2427 .cs-color {
+    color: var(--bodyTextColorWhite);
+  }
+  #services-2427 .cs-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+  #services-2427 .cs-flex {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  #services-2427 .cs-picture {
+    width: 100%;
+    display: block;
+    position: relative;
+  }
+  #services-2427 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #services-2427 .cs-picture1 {
+    height: 90vw;
+    max-height: 34.375rem;
+  }
+  #services-2427 .cs-picture2 {
+    height: 80vw;
+    max-height: 31.25rem;
+  }
+  #services-2427 .cs-floater {
+    /* 91px - 152px */
+    width: clamp(5.6875rem, 10vw, 9.5rem);
+    height: auto;
+    position: absolute;
+    /* 10px - 48px */
+    top: clamp(0.625rem, 3vw, 3rem);
+    right: -1.25rem;
+  }
+    #services-2427 .cs-content-bible{
+        margin-top: clamp(2rem, 3rem, 3.2rem);
+  }
+  
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #services-2427 .cs-container {
+    max-width: 80rem;
+  }
+  #services-2427 .cs-wrapper {
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: clamp(4.75rem, 10vw, 10.75rem);
+    position: relative;
+  }
+  #services-2427 .cs-flex {
+    max-width: 32.625rem;
+  }
+  #services-2427 .cs-picture1 {
+    max-width: 25.8125rem;
+    height: auto;
+    max-height: 100%;
+    min-height: 20rem;
+  }
+  #services-2427 .cs-picture2 {
+    order: -1;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #services-2427 .cs-picture1 {
+    margin-top: 0;
+  }
+  #services-2427 .cs-content-bible{
+    display: flex;
+    gap: 3rem;
+    margin-top: clamp(1.5rem, 2rem, 2.5rem);
+  }
+}
+
+/*-- -------------------------- -->
+<---         location           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #steps-2433 {
+    padding: var(--sectionPadding);
+    background-color: #030711;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  #steps-2433 .cs-container {
+    width: 100%;
+    max-width: 36.5rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(3rem, 6vw, 4rem);
+    position: relative;
+  }
+  #steps-2433 .cs-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    column-gap: 3rem;
+  }
+  #steps-2433 .cs-content .cs-text {
+    /* changes to 413px at tablet */
+    max-width: 100%;
+  }
+  #steps-2433 .cs-flex {
+    width: 100%;
+  }
+  #steps-2433 .cs-topper {
+    width: 100%;
+    color: var(--secondary);
+  }
+  #steps-2433 .cs-title {
+    text-wrap: balance;
+    max-width: none;
+    color: var(--bodyTextColorWhite);
+  }
+  #steps-2433 .cs-steps {
+    width: 100%;
+    /* height enables smooth transition between tabs and eliminates content layout shift (CLS) for accordion while oriented vertically • adjust this to accommodate your custom content */
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  #steps-2433 .cs-step-toggle {
+    /* dimensions of .cs-step-toggle and .cs-tab must be the same at all times */
+    width: 100%;
+    height: 3.5rem;
+    margin: 0;
+    padding: 0;
+    -webkit-appearance: none;
+    appearance: none;
+    flex-shrink: 0;
+    cursor: pointer;
+  }
+  #steps-2433 :checked + .cs-step-panel {
+    /* open panel styles */
+    min-height: 33.75rem;
+    flex-basis: 100%;
+    /* or whatever proportion you want the active panel to expand to */
+    flex-grow: 1;
+  }
+  #steps-2433 :checked + .cs-step-panel .cs-tab {
+    color: var(--primary);
+  }
+  #steps-2433 :checked + .cs-step-panel .cs-item {
+    padding-bottom: 1rem;
+    opacity: 1;
+    transition-duration: 0.66s;
+    transition-timing-function: ease;
+    transition-delay: 0.3s;
+    pointer-events: auto;
+    overflow: scroll;
+  }
+  #steps-2433 :checked + .cs-step-panel .cs-item .cs-text {
+    grid-template-rows: 1fr;
+    transition-duration: 0.66s;
+    transition-timing-function: ease;
+    transition-delay: 0.3s;
+  }
+  #steps-2433 :checked + .cs-step-panel .cs-picture {
+    opacity: 1;
+    transform: scale(1);
+    transition-timing-function: ease;
+    transition-duration: 0.66s;
+    transition-delay: 0.33s;
+  }
+  #steps-2433 .cs-step-panel {
+    min-height: 0;
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 0;
+    flex-grow: 0;
+    flex-shrink: 1;
+    position: relative;
+    transition-property: flex-basis, flex-grow, min-height;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+  }
+  #steps-2433 .cs-tab {
+    /* dimensions of .cs-step-toggle and .cs-tab must be the same at all times */
+    font-size: clamp(1.25rem, 12vw, 0.96153846rem);
+    line-height: 3.5rem;
+    text-align: left;
+    width: 100%;
+    height: 3.5rem;
+    padding: 0;
+    color: var(--bodyTextColorWhite);
+    background: none;
+    /* reset border on label element */
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* position label over toggle element */
+    transform: translate(0, -100%);
+    transition: color 0.3s ease;
+    pointer-events: none;
+  }
+  #steps-2433 .cs-item {
+    text-align: left;
+    margin: 0 auto auto auto;
+    padding: 0;
+    opacity: 0;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2rem;
+    z-index: 1;
+    transition-property: opacity;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    pointer-events: none;
+  }
+  #steps-2433 .cs-item .cs-text {
+    /* nested in cs-item to only apply within steps widget */
+    display: grid;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+    transition-property: grid-template-rows;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+  }
+  #steps-2433 .cs-picture {
+    width: 100%;
+    height: 26.25rem;
+    opacity: 0;
+    transition: transform 0.15s linear, opacity 0.15s linear;
+    transform-origin: 50% 100%;
+    transform: scale(0.51);
+    position: relative;
+    z-index: 1;
+  }
+  #steps-2433 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+  }
+  #steps-2433 .cs-item-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    overflow: scroll;
+  }
+  #steps-2433 .cs-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: auto;
+    display: block;
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+  }
+  #steps-2433 .cs-border {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #steps-2433 .cs-border:before {
+    content: '';
+    opacity: 1;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #steps-2433 .cs-border:after {
+    content: '';
+    opacity: 1;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #steps-2433 .cs-border1 {
+    /* top left border */
+  }
+  #steps-2433 .cs-border1:before {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, #88898b 0%, rgba(0, 0, 0, 0) 78%);
+  }
+  #steps-2433 .cs-border1:after {
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(to bottom, #88898b 0%, rgba(0, 0, 0, 0) 78%);
+  }
+  #steps-2433 .cs-border2:before {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 22%, #88898b 100%);
+    top: auto;
+    bottom: 0;
+  }
+  #steps-2433 .cs-border2:after {
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 22%, #88898b 100%);
+    left: auto;
+    right: 0;
+  }
+  #steps-2433 .cs-text {
+    max-width: none;
+    color: var(--bodyTextColorWhite);
+    opacity: 0.9;
+  }
+  #steps-2433 .cs-item-text {
+    min-height: 0;
+    align-self: center;
+  }
+  #steps-2433 .cs-item-text a {
+    color: var(--secondary);
+  }
+  #steps-2433 .cs-item-text a:hover {
+    text-decoration: none;
+  }
+  #steps-2433 .cs-background {
+    width: 160%;
+    height: 175%;
+    opacity: 0.08;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -3.125rem);
+    z-index: -1;
+    pointer-events: none;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #steps-2433 {
+    /* if your cs-item-text is too tall and makes the panel taller than all the others, measure how tall that panel is and change this variable to that number so they all respond to it. We need a fixed height for the animations to work */
+    --panelHeight: calc((420 / 16) * 1rem);
+  }
+  #steps-2433 .cs-container {
+    max-width: 80rem;
+  }
+  #steps-2433 .cs-content {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  #steps-2433 .cs-content .cs-text {
+    width: 48%;
+    max-width: 25.8125rem;
+  }
+  #steps-2433 .cs-flex {
+    width: 48%;
+  }
+  #steps-2433 .cs-topper {
+    flex-shrink: 0;
+  }
+  #steps-2433 .cs-title {
+    margin: 0;
+  }
+  #steps-2433 .cs-steps {
+    /* reset height • still necessary for dimensions of other elements within accordion */
+    height: var(--panelHeight);
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  #steps-2433 .cs-step-toggle {
+    width: clamp(3.5rem, 6.9vw, 6.25rem);
+    height: 100%;
+  }
+  #steps-2433 :checked + .cs-step-panel {
+    /* open panel styles */
+    min-height: unset;
+    width: 100%;
+  }
+  #steps-2433 :checked + .cs-step-panel .cs-item {
+    padding-bottom: 0;
+  }
+  #steps-2433 :checked + .cs-step-panel .cs-item .cs-text {
+    transition-delay: 0.45s;
+  }
+  #steps-2433 .cs-step-panel {
+    height: 100%;
+    width: 0;
+    flex-direction: row;
+    transition-property: flex-basis, flex-grow, width;
+  }
+  #steps-2433 .cs-tab {
+    text-align: left;
+    writing-mode: vertical-rl;
+    width: clamp(3.5rem, 6.9vw, 6.25rem);
+    height: 100%;
+    border: none;
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+    transform: translate(-100%, 0) rotate(180deg);
+    z-index: 6;
+  }
+  #steps-2433 .cs-item {
+    height: 100%;
+    padding-bottom: 0;
+    padding-right: 2.5rem;
+    flex-direction: row;
+    align-items: stretch;
+    gap: clamp(1rem, 3vw, 2.5rem);
+  }
+  #steps-2433 .cs-picture {
+    width: 50%;
+    height: 100%;
+    flex: 1.25;
+    transform-origin: 50% 50%;
+  }
+  #steps-2433 .cs-item-content {
+    flex: 1;
+    justify-content: space-between;
+    gap: 6.25rem;
+    overflow: scroll;
+  }
+  #steps-2433 .cs-item-text {
+    align-self: flex-start;
+  }
+}
+
+/* Mobile - 360px */
+/* you can copy and paste these styles into the section CSS where you placed the #list-825 HTML, or you can place it in your global stylesheet so you can reuse the HTML in any Side By Side section on your site. That way when you make changes to it, it will also change everywhere in the site */
+#list-825 {
+    margin: 0 0 2rem 0;
+    /* 16px - 20px */
+    padding-left: clamp(1rem, 2vw, 1.25rem);
+    display: flex;
+    flex-direction: column;
+    /* 8px - 12px */
+    gap: clamp(0.5rem, 1vw, 0.75rem);
+}
+#list-825 .cs-li {
+    list-style: none;
+    /* 14px - 18px */
+    font-size: clamp(0.875rem, 1.3vw, 1.125rem);
+    line-height: 1.5em;
+    margin: 0;
+    color: var(--bodyTextColor);
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#list-825 .cs-number {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.6vw, 1rem);
+    /* 24px - 28px */
+    width: clamp(1.5rem, 2.9vw, 1.75rem);
+    height: clamp(1.5rem, 2.9vw, 1.75rem);
+    margin-right: 0.75rem;
+    border-radius: 50%;
+    background: var(--primary);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* we set this element to align to the top of the li, so if there's 
+        multiple lines it will stay at the top instead of the center of the text */
+    align-self: flex-start;
+    /* prevents flexbox from squishing it */
+    flex: none;
+}
+
+/*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #RTsbs-253,
+    #RTsbsr-253,
+    #RTsbst-253 {
+        /* set padding top to 0 if the section above it is another white background section, same for padding bottom. We added the padding here in case this section gets placed above or below sections with full background colors.  Without this padding, the top of this sections color portion will be touching the neighboring section edge and it looks bad */
+        padding: var(--sectionPadding);
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+        position: relative;
+        z-index: 1;
+        background-color: var(--background);
+    }
+    #RTsbs-253 .cs-container,
+    #RTsbsr-253 .cs-container,
+    #RTsbst-253 .cs-container {
+        width: 100%;
+        /* changes to 1280px on tablet */
+        max-width: 34.375rem;
+        padding: var(--sectionPadding);
+        margin: auto;
+        background: var(--background);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+        position: relative;
+        /* prevents padding from adding to height and width */
+        box-sizing: border-box;
+    }
+    #RTsbs-253 .cs-container:before,
+    #RTsbsr-253 .cs-container:before,
+    #RTsbst-253 .cs-container:before {
+        /* Bottom Line */
+        content: "";
+        width: 100%;
+        height: 1px;
+        background: var(--bodyTextColorWhite);
+        background: linear-gradient(
+            270deg,
+            var(--bodyTextColorWhite) 0%,
+            rgba(250, 251, 252, 0.005) 0%,
+            var(--bodyTextColorWhite) 100%
+        );
+        opacity: 1;
+        position: absolute;
+        display: block;
+        bottom: 0;
+        right: 0;
+        /* flips it horizontally */
+        transform: scaleX(-1);
+    }
+    #RTsbs-253 .cs-container:after,
+    #RTsbsr-253 .cs-container:after,
+    #RTsbst-253 .cs-container:after {
+        /* Right Line */
+        content: "";
+        width: 1px;
+        height: 100%;
+        background: var(--bodyTextColorWhite);
+        background: linear-gradient(
+            180deg,
+            var(--bodyTextColorWhite) 0%,
+            rgba(250, 251, 252, 0.005) 0%,
+            var(--bodyTextColorWhite) 100%
+        );
+        opacity: 1;
+        position: absolute;
+        display: block;
+        bottom: 0;
+        right: 0;
+    }
+    #RTsbs-253 .cs-content,
+    #RTsbsr-253 .cs-content,
+    #RTsbst-253 .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: left;
+        width: 100%;
+        max-width: 27.125rem;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: flex-start;
+    }
+
+    #RTsbs-253 .cs-text,
+    #RTsbsr-253 .cs-text,
+    #RTsbst-253 .cs-text {
+        margin-bottom: 1rem;
+    }
+    #RTsbs-253 .cs-text:last-of-type,
+    #RTsbsr-253 .cs-text:last-of-type,
+    #RTsbst-253 .cs-text:last-of-type {
+        margin-bottom: 2rem;
+    }
+    #RTsbs-253 .cs-button-solid,
+    #RTsbsr-253 .cs-button-solid,
+    #RTsbst-253 .cs-button-solid {
+        font-size: 1rem;
+        /* 46px - 56px */
+        line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+        text-decoration: none;
+        font-weight: 700;
+        text-align: center;
+        margin: 0;
+        color: var(--bodyTextColorWhite);
+        min-width: 9.375rem;
+        padding: 0 1.5rem;
+        background-color: var(--primary);
+        border-radius: 0.25rem;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        /* prevents padding from adding to the width */
+        box-sizing: border-box;
+    }
+    #RTsbs-253 .cs-button-solid:before,
+    #RTsbsr-253 .cs-button-solid:before,
+    #RTsbst-253 .cs-button-solid:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        background: var(--background);
+        opacity: 1;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 0.25rem;
+        transition: width 0.3s;
+    }
+    #RTsbs-253 .cs-button-solid:hover:before,
+    #RTsbsr-253 .cs-button-solid:hover:before,
+    #RTsbst-253 .cs-button-solid:hover:before {
+        width: 100%;
+    }
+    #RTsbs-253 .cs-picture,
+    #RTsbsr-253 .cs-picture,
+    #RTsbst-253 .cs-picture {
+        width: 100%;
+        max-width: 32.625rem;
+        margin: 0;
+        border: 1px solid var(--primary);
+        position: relative;
+        display: block;
+        /* width divided by height */
+        aspect-ratio: 1;
+        /* prevents border from adding to height and width */
+        box-sizing: border-box;
+    }
+    #RTsbs-253 .cs-picture img,
+    #RTsbsr-253 .cs-picture img,
+    #RTsbst-253 .cs-picture img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #RTsbs-253 .cs-container,
+    #RTsbsr-253 .cs-container,
+    #RTsbst-253 .cs-container {
+        max-width: 80rem;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #RTsbs-253 .cs-picture,
+    #RTsbsr-253 .cs-picture,
+    #RTsbst-253 .cs-picture {
+        /* 415px - 522px */
+        height: clamp(25.9375rem, 40.5vw, 32.625rem);
+        width: 50%;
+        flex: none;
+    }
+    #RTsbs-253 .cs-content,
+    #RTsbsr-253 .cs-content,
+    #RTsbst-253 .cs-content {
+        max-width: 33rem;
+        margin: 0;
+        width: 45%;
+    }
+}
+
+/*-- -------------------------- -->
+<---   Side By Side Reverse     -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0em) {
+    #RTsbsr-253 {
+        padding: 0;
+    }
+    #RTsbsr-253 .cs-container {
+        background: var(--background);
+    }
+    #RTsbsr-253 .cs-container:before {
+        background: var(--bodyTextColorWhite);
+        background: linear-gradient(
+            270deg,
+            var(--bodyTextColorWhite) 0%,
+            rgba(250, 251, 252, 0.005) 0%,
+            var(--bodyTextColorWhite) 100%
+        );
+        transform: scaleX(1);
+    }
+    #RTsbsr-253 .cs-container:after {
+        left: 0;
+    }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48em) {
+    #RTsbsr-253 .cs-picture {
+        margin: 0;
+        /* sends it to the right in the 2nd position */
+        order: 2;
+    }
+}
+
+/*-- -------------------------- -->
+<---   Side By Side Triplet     -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0em) {
+    #RTsbst-253 {
+        padding: var(--sectionPadding);
+        padding-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+/*-- -------------------------- -->
+<---           Footer           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #cs-footer-106 {
+        padding: 2.5rem 1rem 1.25rem;
+        background: var(--background);
+    }
+    #cs-footer-106 .cs-container {
+        width: 100%;
+        max-width: 67.5rem;
+        margin: auto;
+    }
+    #cs-footer-106 .cs-ul {
+        padding: 0 0 2.5rem;
+        margin: auto;
+        border-bottom: 1px solid #eff0f6;
+    }
+    #cs-footer-106 .cs-li {
+        list-style: none;
+        text-align: center;
+        margin-bottom: 1.25rem;
+    }
+    #cs-footer-106 .cs-li:last-of-type {
+        margin-bottom: 0;
+    }
+    #cs-footer-106 .cs-link {
+        /* 15px - 17px */
+        font-size: clamp(0.9375rem, 2vw, 1.0625rem);
+        line-height: 1.5em;
+        text-decoration: none;
+        font-weight: 700;
+        color: var(--bodyTextColorWhite);
+        position: relative;
+    }
+    #cs-footer-106 .cs-link:hover:before {
+        width: 100%;
+    }
+    #cs-footer-106 .cs-link:before {
+        /* top right box */
+        content: "";
+        width: 0%;
+        height: 0.1875rem;
+        background: var(--bodyTextColorWhite);
+        opacity: 1;
+        position: absolute;
+        display: block;
+        bottom: -0.125rem;
+        left: 0;
+        transition: width 0.3s;
+    }
+    #cs-footer-106 .cs-bottom {
+        margin-top: 1.25rem;
+        display: flex;
+        /* set everyone to position on the left side */
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #cs-footer-106 .cs-copyright {
+        font-size: 0.9375rem;
+        text-align: center;
+        color: #a0a3bd;
+        display: block;
+        /* margin right auto on a flexbox pushes everyone else to the right */
+        margin: 0 auto 0 0;
+    }
+    #cs-footer-106 .cs-social-link {
+        width: 1.25rem;
+        height: 1.25rem;
+        margin-left: 0.75rem;
+        background: #a0a3bd;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #cs-footer-106 .cs-social-link img {
+        height: 0.6875rem;
+        width: auto;
+    }
+}
+/* Tablet - 700px */
+@media only screen and (min-width: 43.75rem) {
+    #cs-footer-106 .cs-ul {
+        display: flex;
+        /* push everything to the left */
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #cs-footer-106 .cs-li {
+        /* 45px - 88px */
+        margin: 0 clamp(2.8125rem, 7vw, 5.5rem) 0 0;
+    }
+    #cs-footer-106 .cs-li:last-of-type {
+        margin: 0;
+        /* margin-left auto will push everything away and force it to the farthest 
+                   right edge */
+        margin-left: auto;
+    }
+}
