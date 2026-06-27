@@ -1,0 +1,106 @@
+---
+description: "Meta description for the page"
+image: "OPTIONAL - If an image path is specified here, it will be used for that page's OG image. Useful for blog posts (implemented as standard with this kit)"
+eleventyComputed:
+  title: "{{ page.fileSlug | titleCase }} | {{ client.name }} | {{ client.address.city }}, {{ client.address.state }}"
+  permalink: "/{{ page.fileSlug | slugify }}/"
+---
+
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    
+    <link rel="stylesheet" href="/assets/css/{{ page.fileSlug }}.css">
+
+    <!-- Any page-specific tags that belong in the <head> -->
+
+
+{% endblock %}
+
+{% block body %}
+
+    <!-- Page HTML goes here, without a <main> wrapper. The <main> tag is already presented in layouts/base.html -->
+
+    <!-- ============================================ -->
+    <!--                 Side By Side                 -->
+    <!-- ============================================ -->
+
+    <section id="sbs-250">
+        <div class="cs-container">
+            <!-- Left Image Section -->
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)" srcset="../assets/images/tablet_phone_size/compressed/webp/eracism.webp">
+                <source media="(min-width: 601px)" srcset="../assets/images/desktop_size/compressed/webp/eracism.webp">
+                <img loading="lazy" decoding="async" src="../assets/images/desktop_size/compressed/webp/eracism.webp" alt="eracism" width="522" height="522" aria-hidden="true">
+            </picture>
+            <!-- Right Content Section-->
+            <div class="cs-content">
+                <h2 class="cs-title">Eracism</h2>
+                <p class="cs-text">BSX Records, 2020</p>
+                <p class="cs-text"><i>Digital Single</i></p>
+                <ul id="list-1404">
+                    <li class="cs-item">
+                        <a class="cs-button-solid" aria-label="amazon music" href="https://music.amazon.com/albums/B08BFCV6TQ">
+                            <svg fill="#f5f5f5" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32px" height="32px" viewBox="0 0 35.418 35.418" xml:space="preserve" stroke="#f5f5f5"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M20.948,9.891c-0.857,0.068-1.847,0.136-2.837,0.269c-1.516,0.195-3.032,0.461-4.284,1.053 c-2.439,0.994-4.088,3.105-4.088,6.209c0,3.898,2.506,5.875,5.669,5.875c1.057,0,1.913-0.129,2.703-0.328 c1.255-0.396,2.31-1.123,3.562-2.441c0.727,0.99,0.923,1.453,2.177,2.509c0.329,0.133,0.658,0.133,0.922-0.066 c0.791-0.659,2.174-1.848,2.901-2.508c0.328-0.267,0.263-0.66,0.066-0.992c-0.727-0.924-1.45-1.718-1.45-3.498v-5.943 c0-2.513,0.195-4.822-1.647-6.537c-1.518-1.391-3.891-1.916-5.735-1.916c-0.264,0-0.527,0-0.792,0 c-3.362,0.197-6.921,1.647-7.714,5.811c-0.13,0.525,0.267,0.726,0.53,0.793l3.691,0.464c0.396-0.07,0.593-0.398,0.658-0.73 c0.333-1.449,1.518-2.176,2.836-2.309c0.067,0,0.133,0,0.265,0c0.79,0,1.646,0.332,2.109,0.987 c0.523,0.795,0.461,1.853,0.461,2.775L20.948,9.891L20.948,9.891z M20.223,17.749c-0.461,0.925-1.253,1.519-2.11,1.718 c-0.131,0-0.327,0.068-0.526,0.068c-1.45,0-2.31-1.123-2.31-2.775c0-2.11,1.254-3.104,2.836-3.565 c0.857-0.197,1.847-0.265,2.836-0.265v0.793C20.948,15.243,21.01,16.43,20.223,17.749z M35.418,26.918v0.215 c-0.035,1.291-0.716,3.768-2.328,5.131c-0.322,0.25-0.645,0.107-0.503-0.254c0.469-1.145,1.541-3.803,1.04-4.412 c-0.355-0.465-1.826-0.43-3.079-0.322c-0.572,0.072-1.075,0.105-1.469,0.183c-0.357,0.033-0.431-0.287-0.071-0.537 c0.466-0.323,0.969-0.573,1.541-0.756c2.039-0.608,4.406-0.25,4.729,0.146C35.348,26.414,35.418,26.629,35.418,26.918z M32.016,29.428c-0.466,0.357-0.965,0.682-1.468,0.973c-3.761,2.261-8.631,3.441-12.856,3.441c-6.807,0-12.895-2.512-17.514-6.709 c-0.396-0.324-0.073-0.789,0.393-0.539C5.549,29.5,11.709,31.26,18.084,31.26c4.013,0,8.342-0.754,12.463-2.371 c0.285-0.104,0.608-0.252,0.895-0.356C32.087,28.242,32.661,28.965,32.016,29.428z"></path> </g> </g></svg>
+                            <p class="cs-text">
+                                Amazon Music
+                            </p>
+                        </a>
+                    </li>
+                    <li class="cs-item">
+                        <a class="cs-button-solid" aria-label="amazon music" href="https://music.apple.com/za/album/eracism/1519092029?i=1519092034">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" fill="#f5f5f5"><title>Apple Music</title><path d="M23.994 6.124a9.23 9.23 0 00-.24-2.19c-.317-1.31-1.062-2.31-2.18-3.043a5.022 5.022 0 00-1.877-.726 10.496 10.496 0 00-1.564-.15c-.04-.003-.083-.01-.124-.013H5.986c-.152.01-.303.017-.455.026-.747.043-1.49.123-2.193.4-1.336.53-2.3 1.452-2.865 2.78-.192.448-.292.925-.363 1.408-.056.392-.088.785-.1 1.18 0 .032-.007.062-.01.093v12.223c.01.14.017.283.027.424.05.815.154 1.624.497 2.373.65 1.42 1.738 2.353 3.234 2.801.42.127.856.187 1.293.228.555.053 1.11.06 1.667.06h11.03a12.5 12.5 0 001.57-.1c.822-.106 1.596-.35 2.295-.81a5.046 5.046 0 001.88-2.207c.186-.42.293-.87.37-1.324.113-.675.138-1.358.137-2.04-.002-3.8 0-7.595-.003-11.393zm-6.423 3.99v5.712c0 .417-.058.827-.244 1.206-.29.59-.76.962-1.388 1.14-.35.1-.706.157-1.07.173-.95.045-1.773-.6-1.943-1.536a1.88 1.88 0 011.038-2.022c.323-.16.67-.25 1.018-.324.378-.082.758-.153 1.134-.24.274-.063.457-.23.51-.516a.904.904 0 00.02-.193c0-1.815 0-3.63-.002-5.443a.725.725 0 00-.026-.185c-.04-.15-.15-.243-.304-.234-.16.01-.318.035-.475.066-.76.15-1.52.303-2.28.456l-2.325.47-1.374.278c-.016.003-.032.01-.048.013-.277.077-.377.203-.39.49-.002.042 0 .086 0 .13-.002 2.602 0 5.204-.003 7.805 0 .42-.047.836-.215 1.227-.278.64-.77 1.04-1.434 1.233-.35.1-.71.16-1.075.172-.96.036-1.755-.6-1.92-1.544-.14-.812.23-1.685 1.154-2.075.357-.15.73-.232 1.108-.31.287-.06.575-.116.86-.177.383-.083.583-.323.6-.714v-.15c0-2.96 0-5.922.002-8.882 0-.123.013-.25.042-.37.07-.285.273-.448.546-.518.255-.066.515-.112.774-.165.733-.15 1.466-.296 2.2-.444l2.27-.46c.67-.134 1.34-.27 2.01-.403.22-.043.442-.088.663-.106.31-.025.523.17.554.482.008.073.012.148.012.223.002 1.91.002 3.822 0 5.732z"/></svg>
+                            <p class="cs-text">
+                                Apple Music
+                            </p>
+                        </a>
+                    </li>
+                    <li class="cs-item">
+                        <a class="cs-button-solid" aria-label="youtube music" href="https://music.youtube.com/playlist?list=OLAK5uy_klfXZ0B_Jg6_dKXEHzn1YHV7y0B6RGKbI">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" fill="#f5f5f5"><title>YouTube Music</title><path d="M12 0C5.376 0 0 5.376 0 12s5.376 12 12 12 12-5.376 12-12S18.624 0 12 0zm0 19.104c-3.924 0-7.104-3.18-7.104-7.104S8.076 4.896 12 4.896s7.104 3.18 7.104 7.104-3.18 7.104-7.104 7.104zm0-13.332c-3.432 0-6.228 2.796-6.228 6.228S8.568 18.228 12 18.228s6.228-2.796 6.228-6.228S15.432 5.772 12 5.772zM9.684 15.54V8.46L15.816 12l-6.132 3.54z"/></svg>
+                            <p class="cs-text">
+                                YouTube Music
+                            </p>
+                        </a>
+                    </li>
+                    <li class="cs-item">
+                        <a class="cs-button-solid" aria-label="tidal" href="https://tidal.com/album/145506917">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" fill="#f5f5f5"><title>TIDAL</title><path d="M12.012 3.992L8.008 7.996 4.004 3.992 0 7.996 4.004 12l4.004-4.004L12.012 12l-4.004 4.004 4.004 4.004 4.004-4.004L12.012 12l4.004-4.004-4.004-4.004zM16.042 7.996l3.979-3.979L24 7.996l-3.979 3.979z"/></svg>
+                            <p class="cs-text">
+                                Tidal
+                            </p>
+                        </a>
+                    </li>
+                    <li class="cs-item">
+                        <a class="cs-button-solid" aria-label="bootcamp" href="https://blancahblack.bandcamp.com/album/eracism">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" fill="#f5f5f5"><title>Bandcamp</title><path d="M0 18.75l7.437-13.5H24l-7.438 13.5H0z"/></svg>
+                            <p class="cs-text">
+                                Bandcamp
+                            </p>
+                        </a>
+                    </li>
+                </ul>              
+                <!-- ============================================ -->
+                <!--                Content List                  -->
+                <!-- ============================================ -->
+                <ul id="cs-content-2177">
+                    <li class="cs-li">
+                        <span class="cs-number">01</span>
+                        <span class="cs-li-text">Eracism</span>
+                    </li>
+                </ul>
+                                    
+                <a class="cs-button-solid" aria-label="back to Discography" href="../discography.html">Back to Music</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- If you want the page to have a "CTA", remove the {# and #} below -->
+    {# {% include 'sections/cta.html' %} #}
+
+{% endblock %}
+
+
+
+
