@@ -1,11 +1,11 @@
 ---
-title: Acuti modo
+title: This is a title
 url: acuti-modo
-description: Lorem markdownum tardantis unam mitissima dissimulator inposuit   corpus sintque tura tremenda, nec coetum.
-author: Code Stitch
+description: This is an example
+author: Isaac
 date: 2023-06-08T15:26:46.705Z
 tags:
-    - post
+  - post
 image: /assets/images/blog/landing.jpg
 imageAlt: Kitchen
 ---
