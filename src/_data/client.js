@@ -6,11 +6,11 @@ module.exports = {
     address: {
         lineOne: "First Address Line",
         lineTwo: "Second Address Line",
-        city: "Denver",
-        state: "CO",
-        zip: "80206",
+        city: "Las Cruces",
+        state: "NM",
+        zip: "88001",
         country: "US",
-        mapLink: "https://maps.app.goo.gl/TEdS5KoLC9ZcULuQ6",
+        mapLink: "https://maps.app.goo.gl/BV3V4c4vEmfEWQzV8",
     },
     socials: {
         facebook: "https://www.facebook.com/BlancahBlack/",
@@ -19,7 +19,7 @@ module.exports = {
         substack: "https://substack.com/@blancahb"
     },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
-    domain: "https://www.example.com",
+    domain: "https://blancahblack.com",
     // Passing the isProduction variable for use in HTML templates
     isProduction: process.env.ELEVENTY_ENV === "PROD",
 };
