@@ -1,7 +1,5 @@
 # Replace the "backend" object below with the snippet from DecapBridge. We need something here to get the CMS to work locally, but this alone won't work in production
 # Use DecapBridge PKCE auth (required)
-# Use DecapBridge PKCE auth (required)
-# Use DecapBridge PKCE auth (required)
 backend:
   name: git-gateway
   repo: Mightysteve101/blancahb
@@ -64,14 +62,3 @@ collections:
           - { label: "Featured Image", name: "image", widget: "image" }
           - { label: "Image Caption", name: "imageAlt", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
-
-
-# Enable PKCE fields (optional, recommended)
-auth:
-  email_claim: email
-  first_name_claim: first_name
-  last_name_claim: last_name
-  avatar_url_claim: avatar_url
-
-# Add site links in Decap CMS (optional)
-site_url: https://blancahblack.com
