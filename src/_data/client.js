@@ -16,7 +16,8 @@ module.exports = {
         facebook: "https://www.facebook.com/BlancahBlack/",
         instagram: "https://www.instagram.com/blancahblack",
         youtube: "https://www.youtube.com/@Blancah29",
-        substack: "https://substack.com/@blancahb"
+        substack: "https://substack.com/@blancahb",
+        linktree: "https://linktr.ee/blancah_black"
     },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
     domain: "https://blancahblack.com",
