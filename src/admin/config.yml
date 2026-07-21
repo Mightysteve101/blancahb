@@ -1,14 +1,15 @@
 # Replace the "backend" object below with the snippet from DecapBridge. We need something here to get the CMS to work locally, but this alone won't work in production
 # Use DecapBridge PKCE auth (required)
 # Use DecapBridge PKCE auth (required)
+# Use DecapBridge PKCE auth (required)
 backend:
   name: git-gateway
-  repo: mightysteve101/blancahb
+  repo: Mightysteve101/blancahb
   branch: main
   auth_type: pkce
   base_url: https://auth.decapbridge.com
-  auth_endpoint: /sites/a4e66036-426d-4577-9dda-66600e09b5b8/pkce
-  auth_token_endpoint: /sites/a4e66036-426d-4577-9dda-66600e09b5b8/token
+  auth_endpoint: /sites/3cb3644e-0cf6-4b98-b592-b16202a44912/pkce
+  auth_token_endpoint: /sites/3cb3644e-0cf6-4b98-b592-b16202a44912/token
   gateway_url: https://gateway.decapbridge.com
 
   # See who did what (optional)
@@ -19,6 +20,16 @@ backend:
     uploadMedia: Upload “{{path}}” - {{author-name}} <{{author-login}}> via DecapBridge
     deleteMedia: Delete “{{path}}” - {{author-name}} <{{author-login}}> via DecapBridge
     openAuthoring: Message {{message}} - {{author-name}} <{{author-login}}> via DecapBridge
+
+# Enable PKCE fields (optional, recommended)
+auth:
+  email_claim: email
+  first_name_claim: first_name
+  last_name_claim: last_name
+  avatar_url_claim: avatar_url
+
+# Add site links in Decap CMS (optional)
+site_url: https://blancahblack.com
 
 # Keep this to allow you to edit the cms locally
 local_backend: true
